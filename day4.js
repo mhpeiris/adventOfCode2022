@@ -1070,10 +1070,6 @@ const getRange = (pairText) => {
     return new Array(end - start + 1).fill().map((d, i) => i + start);
 }
 
-const getDuplications = (first, second) =>
-	first.filter((a) => second.includes(a)).length > 0 ||
-	second.filter((a) => first.includes(a)).length > 0;
-
 var counter = 0;
 pair1.map((pair, i) => {
     pair1Range = getRange(pair);
